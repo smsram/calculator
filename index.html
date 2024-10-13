@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+    <!-- Header -->
+    <abbr title="General Calculator"><h1 class="Header">Calculator</h1></abbr>
+    <!-- Theme Switch -->
+    <input type="checkbox" class="darkMode" id="darkMode">
+    <label for="darkMode" class="darkModeContainer"></label>
+    <i class='bx bxs-moon'></i>
+    <i class='bx bx-sun' ></i>
+    <!-- Calculator -->
+    <div class="calcContainer">
+        <!-- Display -->
+        <abbr title="You Can't Type Any Thing Here!"><input type="text" id="calcDisplay" disabled></abbr>
+        <!-- Buttons -->
+        <!-- 0 to 9 -->
+        <div class="num calcBtn1">1</div>
+        <div class="num calcBtn2">2</div>
+        <div class="num calcBtn3">3</div>
+        <div class="num calcBtn4">4</div>
+        <div class="num calcBtn5">5</div>
+        <div class="num calcBtn6">6</div>
+        <div class="num calcBtn7">7</div>
+        <div class="num calcBtn8">8</div>
+        <div class="num calcBtn9">9</div>
+        <div class="num calcBtn0">0</div>
+        <!-- Operands -->
+        <div class="operand calcAddition">+</div>
+        <div class="operand calcSubtraction">-</div>
+        <div class="operand calcMultiplication">*</div>
+        <div class="operand calcDivision">/</div>
+        <div class="operand calcPower">^</div>
+        <div class="operand calcModulus">%</div>
+        <!-- Symbols -->
+        <div class="special calcEqual">=</div>
+        <div class="special calcDel">Del</div>
+        <div class="special calcClear">C</div>
+        <div class="special calcDot">.</div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
