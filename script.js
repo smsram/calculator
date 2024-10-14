@@ -1,5 +1,7 @@
 /* Toggle Mode */
+
 const body = document.body;
+
 const themeSwitch = document.querySelector(".darkMode");
 const calcContainer = document.querySelector(".calcContainer");
 const bxs_moon = document.querySelector(".bxs-moon");
