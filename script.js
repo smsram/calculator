@@ -30,10 +30,14 @@ function deleteLast(){
 }
 function equalTo(){
     try{
-        calcDisplay.value = eval(calcDisplay.value);
+       let expression = calcDisplay.value
+       .replace(/×/g, "*")
+       .replace(/÷/g, "/")
+       .replace(/\^/g, "**");
+        calcDisplay.value = eval(expression);
     }
     catch{
-        calcDisplay.value = "Error";
+        calcDisplay.value = "Error Bruh";
     }
 }
 
@@ -86,13 +90,13 @@ document.querySelector(".calcSubtraction").addEventListener("click", () => {
     showOnDisplay("-");
 });
 document.querySelector(".calcMultiplication").addEventListener("click", () => {
-    showOnDisplay("*");
+    showOnDisplay("×");
 });
 document.querySelector(".calcDivision").addEventListener("click", () => {
-    showOnDisplay("/");
+    showOnDisplay("÷");
 });
 document.querySelector(".calcPower").addEventListener("click", () => {
-    showOnDisplay("**");
+    showOnDisplay("^");
 });
 document.querySelector(".calcModulus").addEventListener("click", () => {
     showOnDisplay("%");
