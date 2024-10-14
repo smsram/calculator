@@ -28,11 +28,7 @@ function deleteLast(){
 }
 function equalTo(){
     try{
-        let expression = calcDisplay.value
-        .replace(/÷/g, "\");
-        .replace(/×/g, "*");
-        .replace(/\^/g, "**"); 
-        calcDisplay.value = eval(expression);
+        calcDisplay.value = eval(calcDisplay.value);
     }
     catch{
         calcDisplay.value = "Error";
@@ -88,13 +84,13 @@ document.querySelector(".calcSubtraction").addEventListener("click", () => {
     showOnDisplay("-");
 });
 document.querySelector(".calcMultiplication").addEventListener("click", () => {
-    showOnDisplay("×");
+    showOnDisplay("*");
 });
 document.querySelector(".calcDivision").addEventListener("click", () => {
-    showOnDisplay("÷");
+    showOnDisplay("/");
 });
 document.querySelector(".calcPower").addEventListener("click", () => {
-    showOnDisplay("^");
+    showOnDisplay("**");
 });
 document.querySelector(".calcModulus").addEventListener("click", () => {
     showOnDisplay("%");
