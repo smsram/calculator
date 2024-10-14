@@ -157,7 +157,6 @@ body{
     height: 2rem;
     text-align: center;
     cursor: pointer;
-    background-color: var(--second-bg-clr2);
 }
 .calcContainer div:hover{
     background-color: var(--main-clr);
@@ -214,20 +213,26 @@ body{
     left: 40%;
     margin: 1%;
 }
+.num{
+    background-color: var(--second-bg-clr2);
+}
 .calcClear{
     bottom: 55.8%;
     left: 1.6%;
     margin: 1%;
+    background-color: rgb(189, 187, 187);
 }
 .calcDel{
     bottom: 38%;
     left: 1.6%;
     margin: 1%;
+    background-color: rgb(189, 187, 187)
 }
 .calcDot{
     bottom: 2%;
     left: 20.8%;
     margin: 1%;
+    background-color: rgb(189, 187, 187)
 }
 .calcEqual{
     bottom: 2%;
@@ -264,4 +269,7 @@ body{
     bottom: 2%;
     left: 1.6%;
     margin: 1%;
+}
+.operand{
+    background-color: rgb(247, 247, 247);
 }
