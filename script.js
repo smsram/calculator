@@ -29,7 +29,7 @@ function deleteLast(){
 function equalTo(){
     try{
         let expression = calcDisplay.value
-        .replace(/÷/g, "\";
+        .replace(/÷/g, "\");
         .replace(/×/g, "*");
         .replace(/\^/g, "**"); 
         calcDisplay.value = eval(expression);
